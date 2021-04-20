@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root
+{
+  /* Do not change this, softer colors are better for the eyes and design structure */  
+  --col: rgb(214, 75, 57);
+  --tester: rgb(80, 57, 214);
+}
+
+body
+{
+  background: lightgray;
+  user-select: none;
+}
+input
+{
+  padding: 10px;
+  background: white;
+  border: 1px solid gray;
+  outline: 0;
+  resize: none;
+  font-family: 'PT Sans', sans-serif;
+}
+p
+{
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+p#msg, p.msg
+{
+  font-style: italic;
+  color: gray;
+}
+h1 + p#msg a, h1 + p.msg a, h1 + tag + p#msg a, h1 + tag + p.msg a
+{
+  color: gray;
+  text-decoration: none;
+  font-weight: 700;
+}
+button
+{
+  padding: 10px;
+  border: 1px solid var(--col);
+  background: var(--col);
+  outline: none;
+  color: white;
+  vertical-align: top;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+button:hover
+{
+  filter: brightness(1.08);
+  cursor: pointer;
+}
+button:active
+{
+  filter: none;
+}
+form
+{
+  margin-bottom: 7px;
+  display: inline-block;
+}
+div.container
+{
+  padding: 35px;
+  background: white;
+  display: inline-block;
+  margin-top: 20px;
+  width: 360px;
+  text-align: left;
+}
+h1
+{
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 35px;
+}
+button:disabled
+{
+  border: 1px solid lightgray;
+  background: lightgray;
+  filter: none;
+}
+button:disabled:hover
+{
+  cursor: not-allowed;
+}
+hr
+{
+  border: 0;
+  border-bottom: 1px dotted gray;
+}
+a
+{
+  color: var(--col);
+  font-family: 'PT Sans', sans-serif;
+}
+form a
+{
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px;
+}
+form a:hover
+{
+  cursor: pointer;
+}
+a#lm-button:hover
+{
+  cursor: pointer;
+}
+b
+{
+  color: var(--col);
+}
+::selection
+{
+  background: var(--col);
+  color: white;
+}
+a.disabled
+{
+  color: gray;
+}
+a.disabled:hover
+{
+  cursor: not-allowed;
+}
+ul
+{
+  padding-left: 20px;
+  margin: 0;
+}
+tag
+{
+  font-size: 13px;
+  vertical-align: baseline;
+  background: var(--col);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  min-width: 40px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+}

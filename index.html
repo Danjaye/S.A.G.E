@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = 'stylesheet' href = '/style.css'>
+    <title>S.A.G.E</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <center>
+      <div class = 'container'>
+        <h1 style = 'margin-bottom: 5px; display: inline-block; vertical-align: middle;'>S.A.G.E</h1>
+        <tag style = 'margin-left: 7px;'>Early Access</tag>
+        <p class = 'msg' style = 'font-size: 10px;'>Created by <a href = 'https://danjaye.lol'>Danjaye</a> with a concept by <a href = 'https://site-of.vivitron.repl.co'>ViviTron</a> &middot; <a onClick = 'more();' id = 'lm-button'>Learn more ▴</a><br><span id = 'more' style = 'display: none; margin-top: 5px; font-style: normal;'>Basic site developed and produced exclusively for ViviTron by Danjaye. S.A.G.E, SAGE, and Sage are all licensed under <a href = 'http://creativecommons.org/licenses/by-nc-nd/4.0/'>CC-BY-NC-ND</a>. Created under ViviTron's notice and permission in April of 2021.</p>
+        <hr>
+        <p>Go ahead and ask it a few questions&mdash; be it a certain species you want to learn more about, a drink, or a hobby.</p>
+        <form action = 'javascript:getCommand();' style = 'margin-top: 7px;'>
+          <input placeholder = 'Enter a command...' id = 'textbox' autocomplete = 'off'>
+          <button type = 'submit'>Enter</button>
+          <button onClick = 'displayCommands();' disabled>Commands...</button>
+        </form>
+        <p id = 'msg'>Ask, "how do you feel?"</p>
+      </div>
+    </center>
+  </body>
+</html>
